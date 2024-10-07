@@ -1,0 +1,39 @@
+CREATE SCHEMA `school` ;
+
+--------------------------------------------------------------------------------------
+CREATE TABLE `courses` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `course_desc` varchar(255) DEFAULT NULL,
+  `course_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+--------------------------------------------------------------------------------------
+
+CREATE TABLE `extracurriculars` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `extracurricular_desc` varchar(255) DEFAULT NULL,
+  `extracurricular_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+--------------------------------------------------------------------------------------
+
+CREATE TABLE `students` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) DEFAULT NULL,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+--------------------------------------------------------------------------------------
+
+CREATE TABLE `teachers` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `address` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
